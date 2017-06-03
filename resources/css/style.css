@@ -1,0 +1,164 @@
+header {
+  background-color: #03a2ca;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+
+.header-control{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 15px auto;
+}
+
+header input{
+  background-color: #a4f7ff;
+  height: 40px;
+  text-indent: 20px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-apperance: none;
+  border: 0;
+  box-shadow: none;
+  border-radius: 20px;
+  padding : 0;
+  flex: 10;
+  font-family: "Open Sans",Helvetica,arial,sans-serif;
+  font-size: 1rem;
+  outline: none;
+}
+
+header .addButton{
+  flex: 1;
+  text-align: center;
+}
+
+button > i {
+  color: #03cdff;
+  font-size: 4rem;
+}
+
+header button {
+  background-color: #a4f7ff;
+  height: 40px;
+  width: 40px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-apperance: none;
+  border: 0;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #05a9f0;
+}
+
+body {
+  padding-top: 75px;
+}
+
+ul {
+    width: 100%
+}
+
+ul li{
+  width: 90%;
+  height: 40px;
+  padding: 2px;
+  margin: 0 auto;
+  line-height: 40px;
+  margin-bottom: 5px;
+  background-color: #03cdff;
+  font-family: "Open Sans",Helvetica,arial,sans-serif;
+  color: #fff;
+  font-weight:  500;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px rgba(44, 62, 80, 0.15);
+  position: relative;
+  padding-right: 100px;
+}
+
+#completed li{
+  background-color: #b3b3b3;
+  color: black;
+}
+
+ul li:last-of-type{
+  margin-bottom: 0px;
+}
+
+ul li .controls{
+  width: 80px;
+  height: 44px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.controls button{
+  width: 40px;
+  height: 40px;
+  background: none;
+  box-shadow: none;
+  float: left;
+  border: 0;
+  position: relative;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 1px;
+}
+
+.controls button:last-of-type::before{
+  content: '';
+  width: 1px;
+  position: absolute;
+  top: 5px;
+  height: 32px;
+  left: 0;
+  background: #edf0f1;
+}
+
+.controls button i {
+   color: #fff;
+   margin: 9px 5px;
+   cursor: pointer;
+}
+
+.controls button i {
+   transition: color 0.4s ease;
+}
+
+.controls button:first-child i:hover {
+   color: red;
+}
+.controls button:last-child i:hover {
+   color: green;
+}
+
+.heading {
+  font-size: 1.2rem;
+  font-family: "Open Sans",Helvetica,arial,sans-serif;
+  color: #666;
+  text-align: center;
+  line-height: 60px;
+}
+
+ul:empty:before {
+  content: 'Empty';
+}
+
+ul:before {
+  width: 100%;
+  display: block;
+  text-align:center;
+  font-size: 0.7rem;
+  font-family: "Open Sans",Helvetica,arial,sans-serif;
+  color: #aaa;
+}
